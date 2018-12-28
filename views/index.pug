@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  canvas(id='spiral-buffer-ilona' class='spiral-buffer')
+  div(id="lineDrawing" class="artwork")
+    svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 811.88 181.65')
+      g(fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="1" class="lines")
+        rect(class="cls-1" x="202.03" y="10.11" width="12.92" height="161.9")
+        path(class="cls-1" d="M95.8,156.12l86.63-64,85.86,116.28-86.62,64Z" transform="translate(-95.11 -91.46)" )
+        polygon(class="cls-1" points="369.31 173.59 369.31 43.13 321.82 121.39 315.29 121.39 267.59 43.09 267.59 173.59 254.86 173.59 254.86 9.32 262.71 9.32 318.45 101.48 374.19 9.32 382.04 9.32 382.04 173.59 369.31 173.59")
+        polygon(class="cls-1" points="419.47 175.9 419.47 7.36 432.69 7.36 432.69 162.76 508.06 162.76 508.06 175.9 419.47 175.9")
+        path(class="cls-1" d="M752.06,267.36l-16.92-43.1H654.91l-16.68,43.1h-14.1l67.23-171h7.56l67.23,171Zm-22-56.24L695,121.4l-35,89.72Z"
+          transform="translate(-95.11 -91.46)")
+        polyline(class="cls-1" points="93.18 161.65 91.42 25.77 156.97 114.54 93.18 161.65")
+        path(class="cls-1" d="M902,101" transform="translate(-95.11 -91.46)")
+        polygon(class="cls-1" points="80.45 20.2 82.2 155.51 16.92 67.1 80.45 20.2")
+        polyline(class="cls-1" points="802.89 173.54 693.46 173.14 693.46 4.6 802.89 4.54")
+        polyline(class="cls-1" points="738.2 95.97 705.47 95.97 705.47 160.57 785.48 160.57")
+        polyline(class="cls-1" points="785.54 17.16 705.47 17.16 705.47 83.41 738.13 83.41")
+        polyline(class="cls-1" points="802.89 4.54 810.89 4.54 749.93 89.82")
+        line(class="cls-1" x1="738.13" y1="83.41" x2="785.54" y2="17.16")
+        line(class="cls-1" x1="785.48" y1="160.57" x2="738.38" y2="95.97")
+        polyline(class="cls-1" points="749.93 89.54 810.89 173.54 802.89 173.54")
+        path(class="cls-1" d="M176.44,111" transform="translate(-95.11 -91.46)")
+
+  script(src="https://cdn.staticfile.org/animejs/2.2.0/anime.min.js")
+  script(src="/javascripts/pi.js")
+  script.
+    anime({
+      targets: '#lineDrawing .lines .cls-1',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 1500,
+      delay: (el, i) => { return i * 250 },
+      direction: 'alternate',
+      loop: true
+    });

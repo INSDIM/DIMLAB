@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/custom.css')
+    link(rel="stylesheet", href="https://cdn.staticfile.org/meyer-reset/2.0/reset.min.css")
+    link(rel="stylesheet", href="https://cdn.staticfile.org/uikit/2.26.3/css/uikit.min.css")
+    link(rel="stylesheet", href="https://cdn.staticfile.org/twitter-bootstrap/3.3.6/css/bootstrap.min.css")
+    script(src='https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js')
+    script(src="https://cdn.staticfile.org/lodash.js/4.17.11/lodash.min.js")
+
+  body
+    div(id='loader-wrapper')
+      div(class='loader-section section-left')
+      div(class='loader-section section-right')
+
+    div(class='content-wrapper')
+      div(class='sections')
+        div(id='main-content')
+
+    block content
+
+    script(src="https://cdn.staticfile.org/twitter-bootstrap/3.3.6/js/bootstrap.min.js")
+    script(src="https://cdn.staticfile.org/uikit/2.26.3/js/uikit.min.js")
+    script(src="/javascripts/custom.js")

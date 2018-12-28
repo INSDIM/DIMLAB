@@ -1,0 +1,24 @@
+.artwork{
+  padding:0 17%;
+  height:calc(100vh - 70px);
+}
+
+svg{
+  position: relative !important;
+  top: 40%
+}
+
+.spiral-buffer{
+  position: fixed;
+  left: 0;
+}
+
+@media all and (max-width: 992px) {
+  .artwork{
+    padding:0;height:calc(100vh - 70px)
+  }
+  svg{
+    position: relative !important;
+    top: 50%
+  }
+}
