@@ -1,23 +1,38 @@
-.artwork{
-  padding:0 17%;
-  height:calc(100vh - 70px);
+a{
+  color: white !important
 }
 
-svg{
+.artwork {
+  padding: 0 17%;
+  height: calc(100vh - 70px);
+}
+
+svg {
   position: relative !important;
   top: 40%
 }
 
-.spiral-buffer{
+.spiral-buffer {
   position: fixed;
   left: 0;
 }
 
+.page-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  font-weight: 400;
+  margin-top:1%;
+}
+
 @media all and (max-width: 992px) {
-  .artwork{
-    padding:0;height:calc(100vh - 70px)
+  .artwork {
+    padding: 0;
+    height: calc(100vh - 70px)
   }
-  svg{
+  svg {
     position: relative !important;
     top: 45%
   }

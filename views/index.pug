@@ -1,7 +1,11 @@
 extends layout
 
 block content
+  h5(class='page-title')  Designed By 
+    a(href='https://www.inslens.com' target='_blank') INSLENS
+
   canvas(id='spiral-buffer-ilona' class='spiral-buffer')
+
   div(id="lineDrawing" class="artwork")
     svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 811.88 181.65')
       g(fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="1" class="lines")
@@ -24,7 +28,7 @@ block content
         path(class="cls-1" d="M176.44,111" transform="translate(-95.11 -91.46)")
 
   script(src="https://cdn.staticfile.org/animejs/2.2.0/anime.min.js")
-  script(src="/javascripts/pi.js")
+  script(src="/javascripts/pi.min.js")
   script.
     anime({
       targets: '#lineDrawing .lines .cls-1',
