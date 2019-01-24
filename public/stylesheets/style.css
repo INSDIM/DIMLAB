@@ -854,11 +854,11 @@ iframe {
 -------------------------*/
 
 .navigation {
-	/* Safari for macOS & iOS */
+	padding: 8px 15px;
 	-webkit-backdrop-filter: blur(15px) !important;
 	/* Google Chrome */
 	backdrop-filter: blur(15px) !important;
-	background: rgba(25, 53, 111, 0.39);
+	background: rgba(25, 54, 111, 0.5);
 	z-index: 999;
 }
 
@@ -876,7 +876,7 @@ iframe {
 
 .navbar-brand img {
 	width: 80px;
-	margin-top: 12px
+	margin-top: 2px
 }
 
 .nav {
@@ -2017,7 +2017,7 @@ iframe {
 
 @media all and (max-width: 877px) {
 	.nav>li>a {
-		padding: 15px 4px;
+		padding: 15px 10px;
 	}
 }
 
@@ -2076,7 +2076,7 @@ iframe {
 		-webkit-backdrop-filter: blur(15px) !important;
 		/* Google Chrome */
 		backdrop-filter: blur(15px) !important;
-		background: rgba(25, 54, 111, 0.95);
+		background: rgba(25, 54, 111, 0.5);
 		margin-top: 10px
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -2107,11 +2107,11 @@ iframe {
 	}
 	.navigation {
 		z-index: 99999999;
-		padding: 10px 2% 10px 10%;
+		padding: 10px 10px 10px 8%;
 		-webkit-backdrop-filter: blur(15px) !important;
 		/* Google Chrome */
 		backdrop-filter: blur(15px) !important;
-		background: rgba(25, 54, 111, 0.95);
+		background: rgba(25, 54, 111, 0.5);
 	}
 	.navbar-brand img {
 		margin-top: 0

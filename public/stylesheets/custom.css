@@ -1,4 +1,4 @@
-a{
+a {
   color: white !important
 }
 
@@ -24,7 +24,11 @@ svg {
   color: white;
   z-index: 1;
   font-weight: 400;
-  margin-top:1%;
+  margin-top: 1%;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.281)
 }
 
 @media all and (max-width: 992px) {

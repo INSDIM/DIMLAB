@@ -4,11 +4,12 @@ html
     title= title
     link(rel="shortcut icon",href="/images/icon.jpg") 
     link(rel="icon",href="/images/icon.jpg",type="image/x-icon") 
+    link(rel="stylesheet", href="https://cdn.staticfile.org/twitter-bootstrap/3.3.6/css/bootstrap.min.css")
+
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/custom.css')
     link(rel="stylesheet", href="https://cdn.staticfile.org/meyer-reset/2.0/reset.min.css")
     link(rel="stylesheet", href="https://cdn.staticfile.org/uikit/2.26.3/css/uikit.min.css")
-    link(rel="stylesheet", href="https://cdn.staticfile.org/twitter-bootstrap/3.3.6/css/bootstrap.min.css")
     script(src='https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js')
     script(src="https://cdn.staticfile.org/lodash.js/4.17.11/lodash.min.js")
 
@@ -17,7 +18,23 @@ html
       div(class='loader-section section-left')
       div(class='loader-section section-right')
 
-    div(class='content-wrapper')
+    nav(class="navigation navbar navbar-default navbar-fixed-top")
+      div(class="navbar-header")
+        button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+          span(class="sr-only")
+          span(class="icon-bar")
+          span(class="icon-bar")
+          span(class="icon-bar")
+        a(class="navbar-brand" href="#header" data-uk-smooth-scroll="{offset: 120}")
+          img(src="images/DIMLAB.svg" alt="")
+      div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+        ul(class="nav navbar-nav f-small normal raleway")
+          li()
+            a(href="/") 首页
+          li()
+            a(href="/") 工具
+          li()
+            a(href="/") 关于
       div(class='sections')
         div(id='main-content')
 
